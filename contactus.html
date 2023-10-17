@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href = "contactus.css">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body >
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i></label>
+        <label class="logo"><img class="logo" src="Black White Simple Art Studio Logo.png" height="100rem" width="100rem"></label>
+
+        <ul>
+            <li><a class="active" href="index..html">Home</a></li>
+            <li><a class="active"  href="about.html">About</a></li>
+            <li><a class="active" href="services.html">Services</a></li>
+            <li><a class="active" href="contactus.html">Contact</a></li>
+           <!--<button class="active" onclick="myFunction()"><img id="icon" src="https://png.pngtree.com/element_our/20190530/ourmid/pngtree-night-moon-icon-design-image_1257127.jpg"></button>-->
+
+        </ul>
+    </nav>
+    <section class="intropage">
+    <div class="intro">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="youraction" method="post" id="myform">
+              <label class="label" for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label class="label" for="email">Email:</label>
+              <input type="text" id="email" name="email" required>
+              
+              <label class="label" for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              
+              <button type="submit">Submit</button>
+            </form>
+                 <div class="contact-info">
+              <h1>Contact Information</h1>
+              <table>
+                <tr>
+                  <td><span class="contact-icons"><img class="icons"src="phone-call.png"></span> Phone: +910004456578</td>
+                  <td><span class="contact-icons"><img class="icons"src="email.png"></span> Email: minaldhiman04@gmail.com</td>
+                  <td><span class="contact-icons"><img class="icons"src="pin.png"></span> Location: 140401 Rajpura ChitkaraUniversity</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><span class="contact-icons"><img class="icons"src="working-time.png"></span> Business Hours: <br>
+                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 10:00 AM - 4:00 PM<br>
+                    Sunday: Closed
+                  </td>
+                </tr>
+              </table>
+            </div>
+          
+          </div>
+    </div>
+    </section>
+    <script >
+      
+      let form = document.getElementsByTagName("form")[0];
+     form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Submitted!");
+});
+    </script>
+</body>
+</html>

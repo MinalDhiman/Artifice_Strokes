@@ -1,0 +1,187 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+img.logo {
+    border-radius: 50%;
+    height: 5rem;
+    margin: 1rem;
+}
+
+footer {
+    background-color: #6d6a6a;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    max-width: 50rem;
+    max-height: 9rem;
+    margin-left: 2rem;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.footer-logo h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+
+}
+
+.footer-links {
+    list-style: none;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+.footer-links h2 {
+    font-size: large;
+}
+.icons{
+    display: flex;
+    margin-left: 2rem;
+}
+a{
+    margin-left: 1rem;
+}
+.fa {
+
+    padding: 2px;
+    font-size: 5rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: #4f4e4e;
+}
+
+.fa-facebook {
+    background: #6d6a6a;
+    color: white;
+}
+
+.fa-twitter {
+    background: #6d6a6a;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #6d6a6a;
+    color: white;
+}
+
+.fa-instagram {
+    background: #6d6a6a;
+    color: white;
+}
+
+td{
+    justify-content: center;
+    padding-left: 0%;
+}
+.footer-contact {
+    margin-right:0;
+    margin-top: 0;
+    width: 100%;
+}
+
+.contact-info {
+    color: white;
+}
+
+.contact-info table {
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+
+
+}
+
+h1 {
+    color: black;
+}
+
+.contact-info th, .contact-info td {
+    padding: 8px;
+
+    color: rgb(8, 0, 0);
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-icons {
+    font-size: 18px;
+    color: black;
+    margin-right: 5px;
+}
+
+.contact-info h1 {
+    text-align: center;
+}
+
+.icons {
+    width: 1rem;
+
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 858px) {
+
+    .footer-content {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    img.logo {
+        margin-top: 0;
+    }
+
+    .name {
+        font-size: 28px;
+        justify-content: end;
+        align-self: center;
+    }
+
+    .fa {
+        font-size: 2rem;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    .icons {
+        display: flex;
+        margin-left: 2.5rem;
+    }
+
+    a {}
+
+    h2 {
+        align-self: center;
+        margin-left: 3rem;
+    }
+
+    .contact-info {
+        max-width: 100%;
+        justify-content: baseline;
+        align-items: baseline;
+
+
+    }
+
+    section.footer-contact {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #6d6a6a;
+        margin-left: 0%;
+
+    }
+}

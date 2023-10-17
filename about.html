@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head title="Artifice Strokes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.content {
+  display:flex;
+  
+  
+  margin-top: 5%;
+  margin-right: 5%;
+  width:100%;
+
+}
+.active {
+  background-color: #717171;
+}
+.slideshow {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background: #932828;
+  margin-right: 10%;
+  width:50%;
+}
+
+.slideshow img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-right: 10%;
+}
+.written{
+  flex:1;
+  margin-top: 15%;
+  margin-left: 5%;
+  font-family: cursive;
+  padding-left: 10%;
+  
+}
+.text{
+  font-family: cursive;
+  font-size: larger;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+h3{
+  font-family: cursive;
+  align-items: center;
+  padding-right: 25%;
+  padding-left: 25%;
+}
+.bgfeather{
+  margin-top: 9rem;;
+  width:92rem;
+  height:25rem;
+  overflow: hidden;
+  
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<!--Navbar-->
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i></label>
+    <label class="logo"><img class="logo" src="Black White Simple Art Studio Logo.png" height="100rem" width="100rem"></label>
+
+    <ul>
+        <li><a class="active" href="index..html">Home</a></li>
+        <li><a class="active"  href="about.html">About</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a class="active" href="contactus.html">Contact</a></li>
+
+    </ul>
+</nav>
+<!--written content-->
+<img src="feather.png"class="bgfeather">
+<div class="content">
+<div id="written">
+<p class="text">Welcome to my world of artistic expression! I'm thrilled to share my journey as a self-taught artist with a passion for painting, drawing, mandala art, mehndi art, and sketching.
+<br><br>
+    Art has always been my escape, my sanctuary where I can translate my thoughts and feelings into visual narratives. What started as a personal exploration has grown into a creative odyssey that spans various mediums and techniques.
+   <br>
+   <br> 
+    From vibrant canvases that come to life with color, to intricate mandalas that reflect the beauty of symmetry and balance, I find joy in embracing the versatility of my craft. My journey through the world of art has been marked by self-discovery and learning, as I constantly seek to refine my skills and experiment with new forms of expression.
+    <br><br>
+    The delicate finesse of mehndi art and the raw energy of sketching allow me to dive into different facets of artistry, each unveiling a unique facet of my creativity. Through my work, I hope to evoke emotions, spark inspiration, and invite you to join me in exploring the depths of imagination.
+    <br><br>
+    As a self-taught artist, I believe that art is not just about technique; it's about authenticity and the stories we share. Every stroke, line, and hue is an extension of my journey, a reflection of my experiences, dreams, and aspirations. Thank you for being a part of this voyage, and I invite you to explore my creations and share in the magic of art.</p> 
+
+</div>
+  
+    
+<div id="slideshow">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="slideshowimgs/WhatsApp Image 2023-08-23 at 21.44.40.jpeg" style="height:30rem">
+</div>
+<div class="mySlides fade">
+  <img src="slideshowimgs/WhatsApp Image 2023-08-23 at 21.44.41.jpeg" style="height:30rem">
+</div>
+<div class="mySlides fade">
+  <img src="slideshowimgs/WhatsApp Image 2023-08-23 at 21.45.46.jpeg" style="height:30rem">
+</div>
+<div class="mySlides fade">
+    <img src="slideshowimgs/WhatsApp Image 2023-08-23 at 21.45.46 (1).jpeg" style="height:30rem">
+  </div>
+  <div class="mySlides fade">
+    <img src="works/lal.jpeg" style="height:30rem">
+  </div>
+  <div class="mySlides fade">
+    <img src="slideshowimgs/WhatsApp Image 2023-08-23 at 21.53.52 (1).jpeg" style="height:30rem">
+  </div>
+  <div class="mySlides fade">
+    <img src="slideshowimgs/WhatsApp Image 2023-08-23 at 21.53.52.jpeg" style="height:30rem">
+  </div>
+  <h3 >Some of my art works</h3>
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+</div>
+</div>
+</div>
+<br>
+<
+
+</div>
+
+<!--why us-->
+<div class="why">
+  <img class="bgwhy" src="whyus.banner.png">
+  <div class="cards">
+  <div class="firstcard"><img class="icon" src="icons/customized.png"><h2>All types of artworks done</h2></div>
+  <div class="secondcard"><img class="icon" src="icons/friendly.png"><h2>Friendly Approach</h2></div>
+ <div class="bottomcard">
+  <div class="thirdcard"><img class="icon" src="icons/money.png"><h2 class="price">Affordable price ranges</h2></div>
+  <div class="fourthcard"><img class="icon" src="icons/customer.png"><h2 class="customized">Customized Artworks</h2></div>
+</div>
+</div>
+</div>
+
+<!--our team -->
+<section id="team">
+<div class="team">
+  <h1 class="ourteam">Our team for the project</h1>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Minal <br>Dhiman</h2>
+          <p>2110992101</p>
+          <p>minal2101.be21@<br>chitkara.edu.in</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Harshpreet Singh</h2>
+          <p>2110992307</p>
+          <p>harshpreet2307.be<br>21@chitkara.edu.in</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Varinder Kumar</h2>
+          <p>2110992261</p>
+          <p>varinder2261.be21@<br>chitkara.edu.in</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<script>
+ 
+   // Change slide every 3 seconds
+   let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
+  
+</script>
+
+</body>
+</html> 

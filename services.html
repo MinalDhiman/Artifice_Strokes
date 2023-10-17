@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+
+    <title>Art Services</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i></label>
+        <label class="logo"><img class="logo" src="Black White Simple Art Studio Logo.png" height="100rem" width="100rem"></label>
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <ul>
+            <li><a class="active" href="index..html">Home</a></li>
+            <li><a class="active"  href="about.html">About</a></li>
+            <li><a class="active" href="services.html">Services</a></li>
+            <li><a class="active" href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="services">
+        <div class="service" id="painting">
+            <img src="https://t3.ftcdn.net/jpg/02/73/22/74/360_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg" alt="Painting">
+            <h2>Painting</h2>
+            <p>Our talented artists create beautiful paintings using various techniques and styles.</p>
+        </div>
+        <div class="service" id="sketching">
+            <img src="https://play-lh.googleusercontent.com/FPKydSHB5bkeJ8pJYyPQrt8xQqFwJzIL0-WVefjyAkzKQhzkBRfKTQEfakagcxQZWiA" alt="Sketching">
+            <h2>Sketching</h2>
+            <p>Experience the world of sketches through the eyes of our skilled sketch artists.</p>
+        </div>
+        <div class="service" id="mehndi">
+            <img src="https://www.citimuzik.com/wp-content/uploads/2023/02/161bfab8c09afd08f22951a2c8b6998c.jpg" alt="Mehndi">
+            <h2>Mehndi</h2>
+            <p>Decorate your hands with intricate mehndi designs crafted by our experts.</p>
+        </div>
+        <div class="service" id="mandala">
+            <img src="https://cdn.pixabay.com/photo/2020/05/17/06/26/mandala-5180247_640.png" alt="Mandala">
+            <h2>Mandala</h2>
+            <p>Discover the symmetrical beauty of mandala drawings created by our artists.</p>
+        </div>
+        <div class="service" id="doodle">
+            <img src="https://img.freepik.com/free-vector/abstract-scribble-icons-hand-drawn-doodle-coloring_179234-222.jpg?size=626&ext=jpg" alt="Doodle">
+            <h2>Doodle</h2>
+            <p>Unleash your creativity with playful and imaginative doodle artworks.</p>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
+    <script >document.addEventListener('DOMContentLoaded', () => {
+        const services = document.querySelectorAll('.service');
+    
+        services.forEach(service => {
+            service.addEventListener('click', () => {
+                const serviceName = service.id;
+                alert(`You selected ${serviceName} service.`);
+            });
+        });
+    });</script>
+</body>
+</html>

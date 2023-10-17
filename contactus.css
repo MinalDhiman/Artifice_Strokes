@@ -1,0 +1,270 @@
+body {
+    font-family: cursive;
+     background-color: #fffefd;
+            color: #090500;
+  }
+  *{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing : border-box;
+}
+body{
+    font-family: cursive;
+
+}
+nav{
+    background: #bcad99;
+    height:9rem;
+    width:100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+}
+img.logo{
+    border-radius: 50%;
+    position: relative;
+    margin-left: 5rem;
+    margin-bottom: 1.5rem;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 0;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 2rem;
+    margin: 3rem 1rem 1rem 1rem ;
+    font-size: x-large;
+   
+}
+nav ul li a{
+    color:rgb(8, 0, 0);
+    font-size: 20px;
+    padding: 9px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #b3a592;
+    transition: .5s;
+
+
+}
+a:hover{
+    background: #a39685;
+    box-sizing: border-box;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    section{
+        padding-left: 0;
+        margin: 0;
+    }
+    .checkbtn{
+        display:block;
+    }
+    .container {
+        max-width: 800px;
+        padding: 50px;
+        color: white;
+        border:1px solid #ddd ;
+        border-radius: 5px;
+        background-color: #bcad99;
+        opacity: 80%;
+        box-shadow: 5PX 10PX #a0927f;
+    
+      }
+    
+    .intro{
+        position: absolute;
+  
+        margin-top: 10rem;
+        
+        overflow-x:hidden;
+        overflow-y: hidden;
+        width: 100%;
+    }
+    nav{
+        z-index: 1000;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#bcad99;
+        top: 7rem;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        font-weight: bolder;
+        width:30%
+    
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(5, 0, 0);
+    }
+    a:active{
+        color:rgb(0, 0, 0);
+    }
+    a:hover{
+        background-color:#b3a592;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    section{
+            background: url(bg1.jpg) no-repeat;
+            background-size: cover;
+            height: calc(100vh - 80px);
+          }
+     .intro{
+            float:left;
+            margin-right: 40%;
+            margin-top: 10rem;
+          }
+        .bgimg{
+           opacity: 50%;
+        
+            
+        }
+        .intropage{
+          width:100%;
+          
+          margin-left: 0;
+        }
+    
+    
+}
+
+
+/*intro page*/
+section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+.intro{
+    float:left;
+    margin-top: 10rem;
+   background: #000;
+  }
+  .intropage{
+    width:100%;
+    margin-left: 25%;
+  }
+.bgimg{
+   opacity: 50%;   
+}
+.container {
+    max-width: 800px;
+    /* margin: 0 auto; */
+    padding: 50px;
+    color: white;
+    border:1px solid #ddd ;
+    border-radius: 5px;
+    background-color: #bcad99;
+    opacity: 80%;
+    box-shadow: 5PX 10PX #a0927f;
+    /* overflow: hidden; */
+    position:relative;
+   
+    
+
+  }
+
+  .label{
+    display: block;
+    margin-bottom: 5px;
+    font-family: cursive;
+    color: #090500;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  textarea {
+    resize: horizontal;
+  }
+  button {
+    background-color: #aa9d8c;
+    color: rgb(7, 7, 7);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #665e53;
+  }
+  .contact-info {
+    margin-top: 20px;
+    padding: 10px;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .contact-info table {
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  .contact-info th, .contact-info td {
+    padding: 8px;
+  
+   color:rgb(8, 0, 0);
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .contact-icons {
+    font-size: 18px;
+   color:black;
+    margin-right: 5px;
+  }
+  .timing {
+    margin-top: 10px;
+  }
+  .icons{
+    width:1rem;
+    
+  }

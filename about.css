@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing : border-box;
+    font-family: cursive;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+nav{
+    background: #bcad99;
+    height:9rem;
+    width:100%;
+    position: fixed;
+    z-index: 9999;
+    top:0;
+}
+img.logo{
+    border-radius: 50%;
+    position: relative;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 2rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 2rem;
+    margin: 1rem 1rem 1rem 1rem ;
+    font-size: x-large;
+   
+}
+nav ul li a{
+    color:rgb(8, 0, 0);
+    font-size: 20px;
+    padding: 9px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #b3a592;
+    transition: .5s;
+
+
+}
+a:hover{
+    background: #a39685;
+    box-sizing: border-box;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.icon{
+    border-radius: 50%;
+    position: relative;
+   width:8rem;
+   height:8rem;
+   
+   flex:1;
+    
+}
+.why{
+    position:relative;
+    text-align: center;
+    color:#0f1011;
+    width:100%;
+    overflow: hidden;
+}
+.bgwhy{
+    height:40rem;
+    width:90rem;
+}
+div.cards{
+    width:100%;
+    padding-right:10%;
+    padding-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%, -50%);
+}
+div.firstcard{
+    flex:1;
+    float:left;
+    width:50%;
+    
+    
+}
+
+div.secondcard{
+    flex:1;
+    
+    padding-left: 50%;
+    
+}
+.bottomcard{
+    width:100%;
+    margin-top: 5%;
+    
+}
+div.thirdcard{
+    flex:1;
+    float:left;
+    width:50%;
+}
+div.fourthcard{
+    flex:1;
+    width:50%;
+    
+    padding-left: 70%;
+    
+}
+.customized{
+    padding-left: 50%;
+    margin-left: 50%;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+  
+    @media (max-width: 858px){
+        .checkbtn{
+            display:block;
+        }
+        ul{
+            position: fixed;
+            width: 20%;
+            height: 100vh;
+            background:#bcad99;
+            top: 7rem;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            font-weight: bolder;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+    
+        }
+        a:hover,a.active{
+            background: none;
+            color: rgb(5, 0, 0);
+        }
+        a:active{
+            color:rgb(0, 0, 0);
+        }
+        a:hover{
+            background-color:#b3a592;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+        .content{
+            display: flex;
+        }
+        .written{
+            flex-wrap: wrap;
+            flex-direction: column;
+            font-size: larger;
+            width:100rem;
+            background-color: #781a1a;
+        }
+        
+        .slideshow-container{
+            display: flex;
+            flex-direction:row ;
+            position:relative;
+            margin:auto;
+            max-width:100%;
+            overflow: hidden;
+            flex-wrap: wrap;
+        }
+        
+        .mySlides {
+            display: flex;
+            flex-direction:row ;
+            display: none;
+            text-align: center;
+        }
+        .why{
+            position:relative;
+            text-align: center;
+            color:#0f1011;
+            width:828px;
+            overflow: hidden;
+        }
+        .bgwhy{
+            height:70rem;
+            width:55rem;
+        }
+        div.cards{
+            width:100%;
+            padding-right:10%;
+            padding-left: 10%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            padding-bottom: 10%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        }
+        
+        div.firstcard{
+            flex:1;
+            float:left;
+            margin-top: 30%;
+            
+            
+        }
+        
+        div.secondcard{
+            flex:1;
+            float:left;
+           padding-left: 50%;
+           margin-left: 20%;
+            
+        }
+    
+        div.thirdcard{
+    
+            flex:1;
+            float:left;
+            margin-left: 1%;
+        
+        }
+        div.fourthcard{
+    
+            flex:1;
+            float:left;
+        }
+        
+        
+        
+        
+    }
+
+  
+      #team{
+        margin-top: 2rem;
+        margin-left: 20%;
+        margin-right: 20%;
+        align-items: center;
+        
+
+      }
+      
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px ;
+    margin-top: 2rem;
+    
+    
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 #bcad99;
+    align-items: center;
+    padding: 10%;
+  }
+  h1{
+    margin-left: 30%;
+  }
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+ 
+
